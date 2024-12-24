@@ -3848,13 +3848,18 @@ figcaption {
 .quote-boxes-container.sponsors-page {
   margin-top: 3em;
 }
-
+.img_org{
+  height:250px;
+  width: 250px;
+}
 .quote {
   color: #757575;
   margin-bottom: 0;
   font-weight: 500;
 }
-
+.organisers{
+  padding: 10px;
+}
 .talk-info {
   color: #757575;
   letter-spacing: 1px;
@@ -4707,7 +4712,7 @@ figcaption {
 }
 
 .big-confab {
-  color: var(--off-white);
+  color: var(--confab-2023-dark-cream);
   letter-spacing: -.03em;
   text-transform: none;
   text-shadow: 1px 1px 1px #1a213073;
@@ -4731,7 +4736,14 @@ figcaption {
 }
 
 .home-hero-photo-row {
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  position: relative;
+
+
 }
 
 .home-hero-photo-row.hide-on-desktop {
@@ -4743,7 +4755,7 @@ figcaption {
   max-width: 2400px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  display: inline-flex;
   position: relative;
 }
 
@@ -4925,14 +4937,57 @@ figcaption {
 
 .home-hero-h1 {
   z-index: 5;
-  color: var(--off-white);
+  color: #cb2d2dd1;
   letter-spacing: 1px;
   text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
-  margin-top: .8em;
-  margin-bottom: .22em;
+  margin-top: 0.5em;
+  margin-bottom: 0.1em;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 3.5vw;
+  font-weight: 780;
+  line-height: 1.2em;
+  position: relative;
+  border: #000;
+  border-radius: 10em;
+  
+}
+.home-hero-h2 {
+  z-index: 5;
+  color:#5be5b9;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 2.5vw;
+  font-weight: 600;
+  line-height: 1.2em;
+  position: relative;
+}
+
+.home-hero-h3 {
+  z-index: 5;
+  color: #cb2d2dd1;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 1.5vw;
+  font-weight: 600;
+  line-height: 1.2em;
+  position: relative;
+}
+.home-hero-h4 {
+  z-index: 5;
+  color:#000000;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 1px var(--confab-2023-navy-darker);
+  margin-top: 1em;
+  margin-bottom: 1em;
   font-family: Gilroy, Arial, sans-serif;
   font-size: 3vw;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.2em;
   position: relative;
 }
@@ -4940,6 +4995,19 @@ figcaption {
 .home-hero-date-2 {
   z-index: 999;
   color: #fdfaf5;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-family: Gilroy, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+.home-hero-date-3 {
+  z-index: 999;
+  color: #000000;
   text-align: center;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -7112,7 +7180,7 @@ figcaption {
 }
 
 .teal-wash {
-  background-color: #33405ce6;
+  background-color: #34334383;
   position: absolute;
   inset: 0;
 }
@@ -7326,6 +7394,7 @@ figcaption {
   padding-left: 1.5em;
   padding-right: 1.5em;
   display: flex;
+ 
 }
 
 .one-third.last {
@@ -7337,7 +7406,12 @@ figcaption {
   margin-bottom: .5em;
   display: block;
 }
-
+.topics{
+  display:flex;
+}
+.in_topic{
+  padding:50px;
+}
 .setup {
   flex-direction: column;
   display: flex;
@@ -7820,9 +7894,10 @@ html.w-mod-js [data-ix="fixed-navbar"] {
   }
 
   .big-confab {
-    letter-spacing: -3px;
-    margin-bottom: .175em;
-    font-size: 3.5em;
+    letter-spacing: 3px;
+    margin-bottom: 3em;
+    margin-top: 2rem;
+    font-size: 2.5em;
     line-height: 4rem;
   }
 
